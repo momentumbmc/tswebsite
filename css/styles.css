@@ -319,6 +319,16 @@ select:focus-visible {
     padding-top: var(--space-32);
     padding-bottom: var(--space-32);
   }
+
+  .hero--video.section-hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.hero--video.section-hero {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
 }
 
 .grid {
@@ -967,6 +977,44 @@ select:focus-visible {
   }
 }
 
+/* Ticker Tape — full-bleed zero padding, transparent compact */
+.ticker-tape--full-bleed {
+  position: relative;
+  background-color: var(--color-canvas);
+  box-shadow: 0 0 0 100vmax var(--color-canvas);
+  clip-path: inset(0 -100vmax);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
+  margin: 0;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: clip;
+  z-index: 1;
+}
+
+.ticker-tape__inner {
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.ticker-tape__inner tv-ticker-tape {
+  display: block;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  tv-ticker-tape {
+    animation: none;
+  }
+}
+
 /* Image styles */
 img {
   max-width: 100%;
@@ -1135,6 +1183,83 @@ img {
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+}
+
+/* Hero video background — index only (.hero--video) — fixed height irrespective of video, WCAG 1.4.4/1.4.10 safe */
+.hero--video {
+  min-height: 480px;
+  max-height: 80vh;
+  max-height: 80dvh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .hero--video {
+    min-height: 480px;
+    max-height: 75vh;
+    max-height: 75dvh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero--video {
+    min-height: 560px;
+    max-height: 720px;
+    max-height: min(720px, 75dvh);
+  }
+}
+
+.hero-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--color-canvas);
+  pointer-events: none;
+}
+
+.hero-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(250, 250, 248, 0.52) 0%, rgba(250, 250, 248, 0.76) 55%, rgba(250, 250, 248, 0.92) 100%);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-video {
+    display: none;
+  }
+
+  .hero-video-wrap {
+    background-image: url("../assets/hero-home.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-video-overlay {
+    background: rgba(250, 250, 248, 0.84);
+  }
 }
 
 .logo-header-img {

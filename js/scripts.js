@@ -65,4 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Hero video: pause offscreen, respect reduced-motion, fallback on error
+  const heroVideo = document.querySelector('.hero-bg-video');
+  if (heroVideo && heroSection && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const vObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) heroVideo.play().catch(() => {});
+        else heroVideo.pause();
+      });
+    }, { threshold: 0.2 });
+    vObserver.observe(heroSection);
+    heroVideo.addEventListener('error', () => { heroVideo.style.display = 'none'; });
+  }
+
 });

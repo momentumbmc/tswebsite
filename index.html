@@ -54,24 +54,35 @@
   </nav>
 
   <main>
-    <!-- Hero Section -->
-    <section id="hero" class="section section-hero container hero">
-      <div class="hero-bg-overlay">
-        <img src="assets/bg-auction-curve.svg" alt="" class="hero-bg-img">
+    <!-- Hero Section — video background (full-screen) -->
+    <section id="hero" class="section-hero hero hero--video">
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-home.webp" disablePictureInPicture>
+          <source src="assets/hero-home.webm" type="video/webm">
+          <source src="assets/hero-home.mp4" type="video/mp4">
+          <img src="assets/hero-home.webp" alt="">
+        </video>
+        <div class="hero-video-overlay"></div>
       </div>
-      <h1 class="text-4xl mb-6">The way institutions read markets, now taught directly to retail
-        traders</h1>
-      <p class="text-lg text-ink-muted mb-8">For decades, that knowledge stayed inside trading desks and proprietary
-        firms. Retail traders got indicators, candlestick patterns, and signals instead. The Art of Making Wealth closes
-        that gap directly, one student at a time, through TradeSchool.</p>
+      <div class="container hero-content">
+        <h1 class="text-4xl mb-6">The way institutions read markets, now taught directly to retail
+          traders</h1>
+        <p class="text-lg text-ink mb-8">For decades, that knowledge stayed inside trading desks and proprietary
+          firms. Retail traders got indicators, candlestick patterns, and signals instead. The Art of Making Wealth closes
+          that gap directly, one student at a time, through TradeSchool.</p>
 
-      <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary mb-12">Book a
-        one-on-one session</a>
-
-      <figure class="hero-img">
-        <img src="assets/hero-home.webp" alt="Real, annotated order-flow chart" fetchpriority="high">
-      </figure>
+        <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a
+          one-on-one session</a>
+      </div>
     </section>
+
+    <!-- TradingView Ticker Tape — full-bleed zero padding below hero -->
+    <section class="ticker-tape ticker-tape--full-bleed" aria-label="Market ticker tape" role="region">
+      <div class="ticker-tape__inner">
+        <tv-ticker-tape symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:DJI,FX:EURUSD,BITSTAMP:BTCUSD,BITSTAMP:ETHUSD,CMCMARKETS:GOLD" item-size="compact" transparent></tv-ticker-tape>
+      </div>
+    </section>
+    <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script>
 
     <!-- Sticky Mobile CTA Bar -->
     <div id="sticky-cta-bar" class="sticky-cta-bar">
