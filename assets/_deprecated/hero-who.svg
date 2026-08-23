@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display: block; width: 100%; height: auto; max-width: 100%;">
+  <defs>
+    <!-- Card Shadow -->
+    <filter id="card-shadow" x="-20" y="-20" width="400" height="400">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#12151C" flood-opacity="0.04" />
+    </filter>
+    <!-- Subtle Hover Shadow -->
+    <filter id="hover-shadow" x="-10" y="-10" width="350" height="200">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#12151C" flood-opacity="0.03" />
+    </filter>
+    <!-- Accent Wash Gradient -->
+    <linearGradient id="accent-wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3E9DB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- ================= CANVAS BACKGROUND ================= -->
+  <rect x="0" y="0" width="1440" height="1024" fill="#FAFAF8" />
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <g id="topbar" transform="translate(0, 0)">
+    <rect x="0" y="0" width="1440" height="72" fill="#FFFFFF" />
+    <rect x="0" y="71" width="1440" height="1" fill="#E4E1D9" />
+    
+    <!-- Brand Logo -->
+    <g transform="translate(48, 24)">
+      <rect x="0" y="0" width="32" height="32" rx="6" fill="#9C6B2E" />
+      <text x="16" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#F3F1EA" text-anchor="middle">📘</text>
+      <text x="44" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#12151C">TRADESCHOOL</text>
+    </g>
+    
+    <!-- CTA Button -->
+    <g transform="translate(1250, 18)">
+      <rect x="0" y="0" width="140" height="36" rx="6" fill="#9C6B2E" />
+      <text x="70" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#F3F1EA" text-anchor="middle">Enroll Now →</text>
+    </g>
+  </g>
+
+  <!-- ================= HERO HEADER ================= -->
+  <g id="hero-header" transform="translate(720, 130)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="#12151C" text-anchor="middle" letter-spacing="-1">Who is this course for?</text>
+    <text x="0" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#4B4F5A" text-anchor="middle">Three distinct profiles that thrive in our institutional ecosystem.</text>
+    <!-- Accent Line -->
+    <rect x="-60" y="56" width="120" height="4" rx="2" fill="#9C6B2E" />
+  </g>
+
+  <!-- ================= PERSONA CARDS (WHO) ================= -->
+  <g id="persona-cards" transform="translate(0, 220)">
+    
+    <!-- Card 1: Experienced Trader -->
+    <g transform="translate(140, 0)" filter="url(#card-shadow)">
+      <rect x="0" y="0" width="360" height="280" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+      <!-- Top Accent Wash -->
+      <rect x="0" y="0" width="360" height="80" rx="12" fill="url(#accent-wash)" />
+      
+      <!-- Icon Circle -->
+      <circle cx="180" cy="60" r="36" fill="#F3E9DB" />
+      <path d="M160 60 C160 50, 170 40, 180 45 C190 40, 200 50, 200 60" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" />
+      <circle cx="180" cy="60" r="6" fill="#12151C" />
+      
+      <!-- Content -->
+      <text x="180" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#6E4A1E" text-anchor="middle">Experienced Trader</text>
+      <text x="180" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#12151C" text-anchor="middle">Knows the mechanics,</text>
+      <text x="180" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#4B4F5A" text-anchor="middle">wants the institutional reasoning.</text>
+      
+      <!-- Badge -->
+      <rect x="130" y="240" width="100" height="22" rx="4" fill="#9C6B2E" fill-opacity="0.1" />
+      <text x="180" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6E4A1E" text-anchor="middle">Track A: The Analyst</text>
+    </g>
+
+    <!-- Card 2: HNI / Business Owner -->
+    <g transform="translate(540, 0)" filter="url(#card-shadow)">
+      <rect x="0" y="0" width="360" height="280" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+      <rect x="0" y="0" width="360" height="80" rx="12" fill="url(#accent-wash)" />
+      
+      <!-- Icon Circle -->
+      <circle cx="180" cy="60" r="36" fill="#F3E9DB" />
+      <rect x="160" y="48" width="40" height="24" rx="4" fill="none" stroke="#9C6B2E" stroke-width="4" />
+      <rect x="168" y="56" width="24" height="8" rx="2" fill="#9C6B2E" />
+      <line x1="170" y1="60" x2="190" y2="60" stroke="#FAFAF8" stroke-width="2" />
+      
+      <!-- Content -->
+      <text x="180" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#6E4A1E" text-anchor="middle">HNI / Business Owner</text>
+      <text x="180" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#12151C" text-anchor="middle">Manages own capital,</text>
+      <text x="180" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#4B4F5A" text-anchor="middle">needs structured thinking.</text>
+      
+      <!-- Badge -->
+      <rect x="130" y="240" width="100" height="22" rx="4" fill="#9C6B2E" fill-opacity="0.1" />
+      <text x="180" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6E4A1E" text-anchor="middle">Track B: The Manager</text>
+    </g>
+
+    <!-- Card 3: Serious Beginner -->
+    <g transform="translate(940, 0)" filter="url(#card-shadow)">
+      <rect x="0" y="0" width="360" height="280" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+      <rect x="0" y="0" width="360" height="80" rx="12" fill="url(#accent-wash)" />
+      
+      <!-- Icon Circle -->
+      <circle cx="180" cy="60" r="36" fill="#F3E9DB" />
+      <polygon points="180,35 188,55 210,55 192,68 198,88 180,75 162,88 168,68 150,55 172,55" fill="#9C6B2E" />
+      
+      <!-- Content -->
+      <text x="180" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#6E4A1E" text-anchor="middle">Serious Beginner</text>
+      <text x="180" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#12151C" text-anchor="middle">Starting right,</text>
+      <text x="180" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#4B4F5A" text-anchor="middle">not starting over.</text>
+      
+      <!-- Badge -->
+      <rect x="130" y="240" width="100" height="22" rx="4" fill="#9C6B2E" fill-opacity="0.1" />
+      <text x="180" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6E4A1E" text-anchor="middle">Track C: The Builder</text>
+    </g>
+  </g>
+
+  <!-- ================= HOW TO FIT (JOURNEY & PLACEMENT) ================= -->
+  <g id="how-to-fit" transform="translate(0, 560)">
+    <!-- Background Container -->
+    <rect x="60" y="0" width="1320" height="160" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" filter="url(#hover-shadow)" />
+    
+    <!-- Section Title -->
+    <text x="720" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#12151C" text-anchor="middle">How to fit in our ecosystem</text>
+    
+    <!-- Subtle Divider -->
+    <rect x="620" y="46" width="200" height="2" fill="#E4E1D9" />
+
+    <!-- Timeline / Flow Path (Perfectly Centered) -->
+    <g transform="translate(260, 80)">
+      <!-- Connector Line -->
+      <line x1="40" y1="60" x2="880" y2="60" stroke="#E4E1D9" stroke-width="2" stroke-dasharray="8,4" />
+      
+      <!-- Node 1 -->
+      <g transform="translate(40, 0)">
+        <circle cx="0" cy="60" r="16" fill="#9C6B2E" />
+        <circle cx="0" cy="60" r="8" fill="#FFFFFF" />
+        <text x="0" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#12151C" text-anchor="middle">01</text>
+        <text x="0" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#4B4F5A" text-anchor="middle">Onboarding &amp; Assessment</text>
+      </g>
+
+      <!-- Node 2 -->
+      <g transform="translate(320, 0)">
+        <circle cx="0" cy="60" r="16" fill="#9C6B2E" />
+        <circle cx="0" cy="60" r="8" fill="#FFFFFF" />
+        <text x="0" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#12151C" text-anchor="middle">02</text>
+        <text x="0" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#4B4F5A" text-anchor="middle">Core Curriculum &amp; Microstructure</text>
+      </g>
+
+      <!-- Node 3 -->
+      <g transform="translate(600, 0)">
+        <circle cx="0" cy="60" r="16" fill="#9C6B2E" />
+        <circle cx="0" cy="60" r="8" fill="#FFFFFF" />
+        <text x="0" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#12151C" text-anchor="middle">03</text>
+        <text x="0" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#4B4F5A" text-anchor="middle">Auction Theory &amp; Orderflow Tools</text>
+      </g>
+
+      <!-- Node 4 -->
+      <g transform="translate(880, 0)">
+        <circle cx="0" cy="60" r="16" fill="#9C6B2E" />
+        <circle cx="0" cy="60" r="8" fill="#FFFFFF" />
+        <text x="0" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#12151C" text-anchor="middle">04</text>
+        <text x="0" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500" fill="#4B4F5A" text-anchor="middle">Institutional Framework &amp; Execution</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= IMPACT / OUTCOMES (Aligned perfectly with Persona Cards) ================= -->
+  <g id="impact" transform="translate(0, 760)">
+    <!-- Section Title -->
+    <text x="720" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#12151C" text-anchor="middle">What is the impact?</text>
+    <rect x="620" y="14" width="200" height="2" fill="#E4E1D9" />
+
+    <!-- Outcome Cards -->
+    <g transform="translate(0, 40)">
+      
+      <!-- Outcome 1 -->
+      <g transform="translate(140, 0)">
+        <rect x="0" y="0" width="360" height="120" rx="10" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" filter="url(#card-shadow)" />
+        <circle cx="40" cy="60" r="24" fill="#F3E9DB" />
+        <path d="M35,55 L45,65 L55,55" stroke="#9C6B2E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="80" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#12151C">Data-Driven Decisions</text>
+        <text x="80" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">Replace guesswork with real-time</text>
+        <text x="80" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">orderflow and footprint analytics.</text>
+      </g>
+
+      <!-- Outcome 2 -->
+      <g transform="translate(540, 0)">
+        <rect x="0" y="0" width="360" height="120" rx="10" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" filter="url(#card-shadow)" />
+        <circle cx="40" cy="60" r="24" fill="#F3E9DB" />
+        <rect x="28" y="48" width="24" height="18" rx="3" fill="none" stroke="#9C6B2E" stroke-width="3" />
+        <line x1="32" y1="52" x2="48" y2="52" stroke="#9C6B2E" stroke-width="3" />
+        <text x="80" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#12151C">Capital Preservation</text>
+        <text x="80" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">Institutional risk management</text>
+        <text x="80" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">framework protects your portfolio.</text>
+      </g>
+
+      <!-- Outcome 3 -->
+      <g transform="translate(940, 0)">
+        <rect x="0" y="0" width="360" height="120" rx="10" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" filter="url(#card-shadow)" />
+        <circle cx="40" cy="60" r="24" fill="#F3E9DB" />
+        <rect x="28" y="46" width="24" height="24" rx="2" fill="none" stroke="#9C6B2E" stroke-width="3" />
+        <circle cx="40" cy="58" r="6" fill="#9C6B2E" />
+        <text x="80" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#12151C">Professional Execution</text>
+        <text x="80" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">Execute trades with the precision</text>
+        <text x="80" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#4B4F5A">and confidence of a hedge fund.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM CTA ================= -->
+  <g id="bottom-cta" transform="translate(720, 950)">
+    <rect x="-120" y="-20" width="240" height="48" rx="8" fill="#9C6B2E" filter="url(#card-shadow)" />
+    <text x="0" y="12" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#F3F1EA" text-anchor="middle">Start Your Journey →</text>
+  </g>
+
+</svg>

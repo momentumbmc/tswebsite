@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Balance beam — evidence not certainty -->
+  <path d="M3 8H17"/>
+  <path d="M10 8V13"/>
+  <!-- Pivot base -->
+  <path d="M7.5 16L10 13L12.5 16Z"/>
+  <!-- TPO bell mini above beam (auction value motif) -->
+  <path d="M6.5 8C6.5 8 7.8 4.2 10 4.2C12.2 4.2 13.5 8 13.5 8" stroke-width="1.2"/>
+  <path d="M10 4.2V8" stroke-width="1.2"/>
+</svg>

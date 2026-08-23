@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;height:auto">
+  <defs>
+    <filter id="who-shadow" x="-20" y="-20" width="720" height="500">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#12151C" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1440" height="1024" fill="#FAFAF8"/>
+  <text x="720" y="96" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" letter-spacing="1.8" fill="#4B4F5A" text-anchor="middle">ONE STUDENT · ONE MENTOR</text>
+  <!-- Central card -->
+  <g transform="translate(360,176)" filter="url(#who-shadow)">
+    <rect x="0" y="0" width="720" height="460" rx="16" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1"/>
+    <rect x="0" y="0" width="720" height="52" rx="16" fill="#FAFAF8" stroke="#E4E1D9" stroke-width="1"/>
+    <rect x="0" y="44" width="720" height="12" fill="#FAFAF8"/>
+    <text x="24" y="32" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" letter-spacing="1.2" fill="#4B4F5A">MENTORSHIP MODEL</text>
+    <text x="696" y="32" font-family="JetBrains Mono, monospace" font-size="11" fill="#4B4F5A" text-anchor="end">Capped for quality</text>
+    <!-- Two nodes -->
+    <g transform="translate(120,110)">
+      <rect x="0" y="0" width="170" height="118" rx="12" fill="#FAFAF8" stroke="#E4E1D9" stroke-width="1"/>
+      <circle cx="85" cy="42" r="22" fill="#9C6B2E"/>
+      <text x="85" y="48" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#F3F1EA" text-anchor="middle">RR</text>
+      <text x="85" y="82" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C" text-anchor="middle">Mentor</text>
+      <text x="85" y="98" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A" text-anchor="middle">Reads auction</text>
+    </g>
+    <g transform="translate(430,110)">
+      <rect x="0" y="0" width="170" height="118" rx="12" fill="#FAFAF8" stroke="#E4E1D9" stroke-width="1"/>
+      <circle cx="85" cy="42" r="22" fill="#0B1220"/>
+      <text x="85" y="48" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#F3F1EA" text-anchor="middle">YOU</text>
+      <text x="85" y="82" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C" text-anchor="middle">Student</text>
+      <text x="85" y="98" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A" text-anchor="middle">Level N</text>
+    </g>
+    <!-- Connection -->
+    <g transform="translate(290,168)">
+      <line x1="0" y1="0" x2="140" y2="0" stroke="#9C6B2E" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="70" cy="0" r="14" fill="#FFFFFF" stroke="#9C6B2E" stroke-width="1.5"/>
+      <text x="70" y="4.5" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#6E4A1E" text-anchor="middle">1:1</text>
+      <text x="70" y="20" font-family="JetBrains Mono, monospace" font-size="10" fill="#6E4A1E" text-anchor="middle">LIVE</text>
+    </g>
+    <!-- Until competence timeline -->
+    <g transform="translate(60,292)">
+      <line x1="0" y1="0" x2="600" y2="0" stroke="#E4E1D9" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="5" fill="#12151C"/>
+      <circle cx="600" cy="0" r="1.5" fill="#E4E1D9"/>
+      <line x1="600" y1="0" x2="600" y2="0" stroke="#E4E1D9" stroke-width="2" opacity="0"/>
+      <!-- Fade -->
+      <rect x="520" y="-12" width="80" height="24" fill="url(#fade-who)"/>
+      <defs>
+        <linearGradient id="fade-who" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+      <text x="0" y="18" font-family="JetBrains Mono, monospace" font-size="11" fill="#12151C">Start where you are</text>
+      <text x="600" y="18" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="11" font-style="italic" fill="#4B4F5A" text-anchor="end">— until competence, not calendar</text>
+    </g>
+    <!-- Bottom meta -->
+    <g transform="translate(24,372)">
+      <text x="0" y="0" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="11" fill="#4B4F5A">Live sessions only • One dedicated mentor • No fixed end date</text>
+      <text x="0" y="18" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A">Seats stay limited when a mentor’s time is with existing students</text>
+    </g>
+  </g>
+  <!-- Three small proof pills below card -->
+  <g transform="translate(360,680)">
+    <rect x="0" y="0" width="220" height="56" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1"/>
+    <text x="20" y="22" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A">FORMAT</text>
+    <text x="20" y="40" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C">Large batches ✕</text>
+    <rect x="240" y="0" width="220" height="56" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1"/>
+    <text x="260" y="22" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A">SESSIONS</text>
+    <text x="260" y="40" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C">Pre-recorded ✕</text>
+    <rect x="480" y="0" width="240" height="56" rx="12" fill="#F3E9DB" stroke="#9C6B2E" stroke-width="1"/>
+    <text x="500" y="22" font-family="JetBrains Mono, monospace" font-size="11" fill="#6E4A1E">TRADESCHOOL</text>
+    <text x="500" y="40" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C">1 student, 1 mentor ✓</text>
+  </g>
+  <text x="720" y="808" font-family="JetBrains Mono, monospace" font-size="12" fill="#4B4F5A" text-anchor="middle">Quality over quantity — a harder business to run, a better education to have</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Card Shadow for Right Card -->
+    <filter id="card-shadow" x="-20" y="-20" width="750" height="850">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#12151C" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- ================= CANVAS BACKGROUND ================= -->
+  <rect x="0" y="0" width="1920" height="1080" fill="#FAFAF8" />
+
+  <!-- ================= PAGE HEADER ================= -->
+  <g id="header" transform="translate(960, 60)">
+    <!-- Main Title -->
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="#12151C" text-anchor="middle" letter-spacing="-0.5">Why TRADESCHOOL?</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#4B4F5A" text-anchor="middle">A side-by-side comparison of traditional approaches vs. our institutional framework</text>
+  </g>
+
+  <!-- ================= COMPARISON SECTION ================= -->
+  <g id="comparison-section" transform="translate(0, 160)">
+    
+    <!-- Left Card: OTHERS -->
+    <g transform="translate(260, 0)">
+      <!-- Card Background -->
+      <rect x="0" y="0" width="690" height="780" rx="16" fill="#F3E9DB" />
+      
+      <!-- Header Section -->
+      <g transform="translate(50, 60)">
+        <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#8A8D96" letter-spacing="2">OTHERS</text>
+        
+        <!-- Subtle Divider -->
+        <rect x="0" y="20" width="590" height="2" fill="#E4E1D9" />
+      </g>
+
+      <!-- Left List Items -->
+      <g transform="translate(50, 130)">
+        <!-- Item 1 -->
+        <g transform="translate(0, 0)">
+          <circle cx="0" cy="12" r="8" fill="#E4E1D9" />
+          <text x="25" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#4B4F5A">Signals and setups</text>
+        </g>
+        
+        <!-- Item 2 -->
+        <g transform="translate(0, 100)">
+          <circle cx="0" cy="12" r="8" fill="#E4E1D9" />
+          <text x="25" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#4B4F5A">Indicators and overlays</text>
+        </g>
+        
+        <!-- Item 3 -->
+        <g transform="translate(0, 200)">
+          <circle cx="0" cy="12" r="8" fill="#E4E1D9" />
+          <text x="25" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#4B4F5A">Pattern memorisation</text>
+        </g>
+        
+        <!-- Item 4 -->
+        <g transform="translate(0, 300)">
+          <circle cx="0" cy="12" r="8" fill="#E4E1D9" />
+          <text x="25" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#4B4F5A">Alert-driven entries</text>
+        </g>
+        
+        <!-- Item 5 -->
+        <g transform="translate(0, 400)">
+          <circle cx="0" cy="12" r="8" fill="#E4E1D9" />
+          <text x="25" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#4B4F5A">Backtested win rates</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Vertical Divider Gap (20px) -->
+    
+    <!-- Right Card: TRADESCHOOL -->
+    <g transform="translate(970, 0)" filter="url(#card-shadow)">
+      <!-- Card Background -->
+      <rect x="0" y="0" width="690" height="780" rx="16" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+      
+      <!-- Header Section -->
+      <g transform="translate(50, 60)">
+        <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#9C6B2E" letter-spacing="2">TRADESCHOOL</text>
+        
+        <!-- Brand Accent Divider -->
+        <rect x="0" y="20" width="590" height="4" fill="#9C6B2E" />
+      </g>
+
+      <!-- Right List Items -->
+      <g transform="translate(50, 130)">
+        <!-- Item 1 -->
+        <g transform="translate(0, 0)">
+          <!-- Checkmark -->
+          <path d="M 6 12 L 12 18 L 22 8" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C">Market structure first</text>
+        </g>
+        
+        <!-- Item 2 -->
+        <g transform="translate(0, 100)">
+          <path d="M 6 12 L 12 18 L 22 8" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C">Auction theory &amp; order flow</text>
+        </g>
+        
+        <!-- Item 3 -->
+        <g transform="translate(0, 200)">
+          <path d="M 6 12 L 12 18 L 22 8" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C">Volume profile reading</text>
+        </g>
+        
+        <!-- Item 4 -->
+        <g transform="translate(0, 300)">
+          <path d="M 6 12 L 12 18 L 22 8" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C">Reasoned trade planning</text>
+        </g>
+        
+        <!-- Item 5 -->
+        <g transform="translate(0, 400)">
+          <path d="M 6 12 L 12 18 L 22 8" stroke="#9C6B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C">Institutional logic</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM FOOTER NOTE ================= -->
+  <g id="footer" transform="translate(960, 1020)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#8A8D96" text-anchor="middle">Built with precision. Designed for institutions.</text>
+  </g>
+</svg>

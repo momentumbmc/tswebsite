@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 600" width="509" height="600">
+  <defs>
+    <!-- Card Shadow -->
+    <filter id="card-shadow" x="-10" y="-10" width="440" height="90">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#12151C" flood-opacity="0.06" />
+    </filter>
+    <!-- Top Bar Shadow -->
+    <filter id="topbar-shadow" x="0" y="44" width="509" height="10">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#12151C" flood-opacity="0.03" />
+    </filter>
+    <!-- Chart Shadow -->
+    <filter id="chart-shadow" x="-10" y="-10" width="440" height="180">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#12151C" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- ================= CANVAS BACKGROUND ================= -->
+  <rect x="0" y="0" width="509" height="600" fill="#FAFAF8" />
+
+  <!-- ================= LIGHT OUTER BORDER ================= -->
+  <rect x="15" y="15" width="479" height="570" rx="12" fill="none" stroke="#E4E1D9" stroke-width="1.5" />
+
+  <!-- ================= TOP APP BAR ================= -->
+  <g id="topbar" filter="url(#topbar-shadow)">
+    <rect x="0" y="0" width="509" height="44" fill="#FFFFFF" />
+    <rect x="0" y="43" width="509" height="1" fill="#E4E1D9" />
+    
+    <!-- Hamburger -->
+    <g transform="translate(16, 10)">
+      <rect x="0" y="0" width="24" height="24" rx="4" fill="transparent" />
+      <text x="12" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#12151C" text-anchor="middle">☰</text>
+    </g>
+
+    <!-- Brand -->
+    <text x="254" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#12151C" text-anchor="middle">TRADESCHOOL</text>
+
+    <!-- User Avatar -->
+    <g transform="translate(470, 8)">
+      <circle cx="14" cy="14" r="14" fill="#0B1220" />
+      <text x="14" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#F3F1EA" text-anchor="middle">RR</text>
+    </g>
+  </g>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <g id="main-content" transform="translate(0, 50)">
+    
+    <!-- ================= GAMIFICATION HEADER ================= -->
+    <g transform="translate(30, 0)">
+      <!-- Title & Level -->
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#12151C">Mission Control</text>
+      
+      <g transform="translate(390, -6)">
+        <rect x="0" y="0" width="62" height="22" rx="6" fill="#F3E9DB" />
+        <text x="31" y="15" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#6E4A1E" text-anchor="middle">Level 4</text>
+      </g>
+
+      <!-- XP & Progress Bar -->
+      <g transform="translate(0, 18)">
+        <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4B4F5A">480 / 600 XP</text>
+        <rect x="0" y="8" width="449" height="5" rx="2.5" fill="#E4E1D9" />
+        <rect x="0" y="8" width="360" height="5" rx="2.5" fill="#9C6B2E" />
+      </g>
+
+      <!-- Streak & Quests -->
+      <g transform="translate(0, 36)">
+        <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6E4A1E">🔥 7 Day Streak</text>
+        <text x="120" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4B4F5A">• 4 Quests Remaining</text>
+      </g>
+    </g>
+
+    <!-- ================= ORDERFLOW INTELLIGENCE CHART ================= -->
+    <g transform="translate(30, 70)">
+      <rect x="15" y="0" width="420" height="160" rx="10" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" filter="url(#chart-shadow)" />
+      
+      <!-- Chart Header -->
+      <rect x="15" y="0" width="420" height="28" rx="10" fill="#FAFAF8" />
+      <rect x="15" y="24" width="420" height="4" fill="#FAFAF8" />
+      <text x="27" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#12151C">Orderflow Intelligence</text>
+      <rect x="380" y="6" width="42" height="16" rx="4" fill="#9C6B2E" />
+      <text x="401" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#F3F1EA" text-anchor="middle">● Live</text>
+
+      <!-- Chart Area -->
+      <g transform="translate(27, 32)">
+        <!-- Grid Lines -->
+        <line x1="0" y1="14" x2="396" y2="14" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="0" y1="32" x2="396" y2="32" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="0" y1="50" x2="396" y2="50" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="0" y1="68" x2="396" y2="68" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="0" y1="86" x2="396" y2="86" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="0" y1="104" x2="396" y2="104" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        
+        <line x1="50" y1="0" x2="50" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="110" y1="0" x2="110" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="170" y1="0" x2="170" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="230" y1="0" x2="230" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="290" y1="0" x2="290" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+        <line x1="350" y1="0" x2="350" y2="118" stroke="#E4E1D9" stroke-width="0.5" stroke-dasharray="2,2" />
+
+        <!-- ORDERBLOCK ZONE -->
+        <rect x="140" y="28" width="60" height="40" rx="2" fill="#9C6B2E" fill-opacity="0.12" stroke="#9C6B2E" stroke-width="0.8" stroke-dasharray="3,3" />
+        <text x="170" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="7" font-weight="600" fill="#6E4A1E" text-anchor="middle">Orderblock</text>
+
+        <!-- CANDLESTICKS -->
+        <!-- Bearish 1 -->
+        <rect x="16" y="38" width="6" height="18" fill="#12151C" />
+        <line x1="19" y1="30" x2="19" y2="56" stroke="#12151C" stroke-width="1.2" />
+        
+        <!-- Bullish 1 -->
+        <rect x="36" y="28" width="6" height="22" fill="#9C6B2E" />
+        <line x1="39" y1="24" x2="39" y2="56" stroke="#9C6B2E" stroke-width="1.2" />
+        
+        <!-- Bearish 2 -->
+        <rect x="60" y="44" width="6" height="14" fill="#12151C" />
+        <line x1="63" y1="38" x2="63" y2="60" stroke="#12151C" stroke-width="1.2" />
+        
+        <!-- Bullish 2 -->
+        <rect x="80" y="32" width="6" height="26" fill="#9C6B2E" />
+        <line x1="83" y1="24" x2="83" y2="64" stroke="#9C6B2E" stroke-width="1.2" />
+        
+        <!-- Bullish 3 (inside orderblock) -->
+        <rect x="100" y="18" width="6" height="30" fill="#9C6B2E" />
+        <line x1="103" y1="14" x2="103" y2="54" stroke="#9C6B2E" stroke-width="1.2" />
+        
+        <!-- Bearish 3 (inside orderblock) -->
+        <rect x="120" y="40" width="6" height="18" fill="#12151C" />
+        <line x1="123" y1="34" x2="123" y2="62" stroke="#12151C" stroke-width="1.2" />
+        
+        <!-- Bullish 4 (inside orderblock) -->
+        <rect x="140" y="24" width="6" height="26" fill="#9C6B2E" />
+        <line x1="143" y1="18" x2="143" y2="56" stroke="#9C6B2E" stroke-width="1.2" />
+        
+        <!-- Bearish 4 (breakout from orderblock) -->
+        <rect x="165" y="42" width="6" height="20" fill="#12151C" />
+        <line x1="168" y1="36" x2="168" y2="66" stroke="#12151C" stroke-width="1.2" />
+        
+        <!-- Bullish 5 -->
+        <rect x="185" y="26" width="6" height="28" fill="#9C6B2E" />
+        <line x1="188" y1="20" x2="188" y2="60" stroke="#9C6B2E" stroke-width="1.2" />
+        
+        <!-- Bearish 5 -->
+        <rect x="210" y="46" width="6" height="16" fill="#12151C" />
+        <line x1="213" y1="40" x2="213" y2="66" stroke="#12151C" stroke-width="1.2" />
+
+        <!-- VWAP & POC -->
+        <line x1="0" y1="54" x2="396" y2="54" stroke="#0B1220" stroke-width="1.2" stroke-dasharray="4,3" />
+        <text x="398" y="57" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#0B1220">VWAP</text>
+        
+        <line x1="0" y1="32" x2="396" y2="32" stroke="#9C6B2E" stroke-width="1" stroke-dasharray="2,2" />
+        <text x="398" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#9C6B2E">POC</text>
+
+        <!-- FOOTPRINT (Volume Profile) -->
+        <g transform="translate(400, 0)">
+          <rect x="0" y="8" width="16" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="18" width="24" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="28" width="8" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="38" width="20" height="6" rx="1" fill="#9C6B2E" />
+          <rect x="0" y="48" width="28" height="6" rx="1" fill="#9C6B2E" />
+          <rect x="0" y="58" width="12" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="68" width="18" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="78" width="6" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="88" width="14" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="98" width="22" height="6" rx="1" fill="#E4E1D9" />
+          <rect x="0" y="108" width="10" height="6" rx="1" fill="#E4E1D9" />
+          <text x="12" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#8A8D96" text-anchor="middle">Footprint</text>
+        </g>
+
+        <!-- Y-Axis Labels -->
+        <text x="-4" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">181.00</text>
+        <text x="-4" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">180.50</text>
+        <text x="-4" y="53" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">180.00</text>
+        <text x="-4" y="71" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">179.50</text>
+        <text x="-4" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">179.00</text>
+        <text x="-4" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="end">178.50</text>
+
+        <!-- X-Axis Labels -->
+        <text x="30" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">9:30</text>
+        <text x="90" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">10:00</text>
+        <text x="150" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">10:30</text>
+        <text x="210" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">11:00</text>
+        <text x="270" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">11:30</text>
+        <text x="330" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8A8D96" text-anchor="middle">12:00</text>
+      </g>
+    </g>
+
+    <!-- ================= FLOWCHART TIMELINE ================= -->
+    <g transform="translate(30, 248)">
+      <!-- Vertical Line -->
+      <line x1="30" y1="20" x2="30" y2="270" stroke="#E4E1D9" stroke-width="2" />
+      
+      <!-- Dots -->
+      <circle cx="30" cy="30" r="8" fill="#9C6B2E" />
+      <circle cx="30" cy="100" r="8" fill="#9C6B2E" />
+      <circle cx="30" cy="170" r="8" fill="#9C6B2E" />
+      <circle cx="30" cy="240" r="8" fill="#9C6B2E" />
+
+      <!-- ================= FLOWCHART CARDS ================= -->
+      
+      <!-- Card 1: 01 Market mechanics -->
+      <g transform="translate(45, 0)" filter="url(#card-shadow)">
+        <rect x="0" y="0" width="420" height="60" rx="8" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+        
+        <!-- Level Pill -->
+        <rect x="12" y="12" width="32" height="20" rx="4" fill="#F3E9DB" />
+        <text x="28" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6E4A1E" text-anchor="middle">01</text>
+        
+        <!-- Title & Description -->
+        <text x="55" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#12151C">Market mechanics</text>
+        <text x="55" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4B4F5A">How does the market physically work?</text>
+        
+        <!-- Status -->
+        <rect x="330" y="22" width="50" height="18" rx="4" fill="#F3E9DB" />
+        <text x="355" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#6E4A1E" text-anchor="middle">Done</text>
+        
+        <!-- Assignee -->
+        <circle cx="395" cy="31" r="12" fill="#0B1220" />
+        <text x="395" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#F3F1EA" text-anchor="middle">RR</text>
+      </g>
+
+      <!-- Card 2: 02 Auction behavior -->
+      <g transform="translate(45, 70)" filter="url(#card-shadow)">
+        <rect x="0" y="0" width="420" height="60" rx="8" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+        
+        <!-- Level Pill -->
+        <rect x="12" y="12" width="32" height="20" rx="4" fill="#F3E9DB" />
+        <text x="28" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6E4A1E" text-anchor="middle">02</text>
+        
+        <!-- Title & Description -->
+        <text x="55" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#12151C">Auction behavior</text>
+        <text x="55" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4B4F5A">Why is price behaving this way?</text>
+        
+        <!-- Status -->
+        <rect x="310" y="22" width="70" height="18" rx="4" fill="#9C6B2E" />
+        <text x="345" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F3F1EA" text-anchor="middle">In Progress</text>
+        
+        <!-- Assignee -->
+        <circle cx="395" cy="31" r="12" fill="#9C6B2E" />
+        <text x="395" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#F3F1EA" text-anchor="middle">RR</text>
+      </g>
+
+      <!-- Card 3: 03 Order flow -->
+      <g transform="translate(45, 140)" filter="url(#card-shadow)">
+        <rect x="0" y="0" width="420" height="60" rx="8" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+        
+        <!-- Level Pill -->
+        <rect x="12" y="12" width="32" height="20" rx="4" fill="#F3E9DB" />
+        <text x="28" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6E4A1E" text-anchor="middle">03</text>
+        
+        <!-- Title & Description -->
+        <text x="55" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#12151C">Order flow</text>
+        <text x="55" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4B4F5A">What's happening inside the auction right now?</text>
+        
+        <!-- Status -->
+        <rect x="310" y="22" width="70" height="18" rx="4" fill="#9C6B2E" />
+        <text x="345" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F3F1EA" text-anchor="middle">In Progress</text>
+        
+        <!-- Assignee -->
+        <circle cx="395" cy="31" r="12" fill="#9C6B2E" />
+        <text x="395" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#F3F1EA" text-anchor="middle">RR</text>
+      </g>
+
+      <!-- Card 4: 04 Independent research -->
+      <g transform="translate(45, 210)" filter="url(#card-shadow)">
+        <rect x="0" y="0" width="420" height="60" rx="8" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1" />
+        
+        <!-- Level Pill -->
+        <rect x="12" y="12" width="32" height="20" rx="4" fill="#F3E9DB" />
+        <text x="28" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6E4A1E" text-anchor="middle">04</text>
+        
+        <!-- Title & Description -->
+        <text x="55" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#12151C">Independent research</text>
+        <text x="55" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4B4F5A">Can I investigate, challenge, and validate my own ideas?</text>
+        
+        <!-- Status -->
+        <rect x="330" y="22" width="50" height="18" rx="4" fill="#E4E1D9" />
+        <text x="355" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#8A8D96" text-anchor="middle">To Do</text>
+        
+        <!-- Assignee -->
+        <circle cx="395" cy="31" r="12" fill="#E4E1D9" />
+        <text x="395" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#8A8D96" text-anchor="middle">??</text>
+      </g>
+    </g>
+
+    <!-- ================= FLOATING ACTION BUTTON ================= -->
+    <g transform="translate(445, 530)">
+      <rect x="0" y="0" width="44" height="44" rx="22" fill="#9C6B2E" filter="url(#card-shadow)" />
+      <text x="22" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#F3F1EA" text-anchor="middle">+</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;height:auto">
+  <defs>
+    <linearGradient id="circle-grad-hero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F4EF"/>
+    </linearGradient>
+    <filter id="circle-shadow-hero" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#12151C" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1440" height="1024" fill="#FAFAF8"/>
+  <text x="720" y="96" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" letter-spacing="1.6" fill="#6E4A1E" text-anchor="middle">HOW A PRICE IS SET</text>
+  <text x="720" y="120" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" fill="#4B4F5A" text-anchor="middle">Not decreed. Agreed — two needs meeting at one price. The auction underneath everything.</text>
+  <!-- Two circles -->
+  <g transform="translate(0,160)">
+    <g filter="url(#circle-shadow-hero)">
+      <circle cx="470" cy="300" r="198" fill="url(#circle-grad-hero)" stroke="#E4E1D9" stroke-width="1.5"/>
+    </g>
+    <g filter="url(#circle-shadow-hero)">
+      <circle cx="970" cy="300" r="198" fill="url(#circle-grad-hero)" stroke="#E4E1D9" stroke-width="1.5"/>
+    </g>
+    <!-- Overlap wash -->
+    <rect x="682" y="112" width="76" height="376" rx="10" fill="#F3E9DB" opacity="0.52"/>
+    <!-- Vertical price axis -->
+    <line x1="720" y1="92" x2="720" y2="508" stroke="#E4E1D9" stroke-width="1.5"/>
+    <line x1="712" y1="180" x2="728" y2="180" stroke="#E4E1D9" stroke-width="1.2"/>
+    <line x1="712" y1="300" x2="728" y2="300" stroke="#9C6B2E" stroke-width="1.2"/>
+    <line x1="712" y1="420" x2="728" y2="420" stroke="#E4E1D9" stroke-width="1.2"/>
+    <!-- Horizontal meeting line -->
+    <line x1="272" y1="300" x2="1168" y2="300" stroke="#9C6B2E" stroke-width="1.4" opacity="0.85"/>
+    <circle cx="720" cy="300" r="24" fill="#F3E9DB"/>
+    <circle cx="720" cy="300" r="9" fill="#9C6B2E"/>
+    <!-- Labels -->
+    <text x="470" y="548" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" letter-spacing="1.6" fill="#4B4F5A" text-anchor="middle">BUYER’S PRICE</text>
+    <text x="470" y="570" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" fill="#4B4F5A" text-anchor="middle">willing to pay</text>
+    <text x="970" y="548" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" letter-spacing="1.6" fill="#4B4F5A" text-anchor="middle">SELLER’S PRICE</text>
+    <text x="970" y="570" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" fill="#4B4F5A" text-anchor="middle">willing to accept</text>
+    <text x="720" y="576" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#12151C" text-anchor="middle">A trade happens when the two agree</text>
+  </g>
+  <!-- Investing vs Trading timeline below circles -->
+  <g transform="translate(380,760)">
+    <rect x="0" y="0" width="680" height="84" rx="12" fill="#FFFFFF" stroke="#E4E1D9" stroke-width="1"/>
+    <line x1="24" y1="34" x2="656" y2="34" stroke="#E4E1D9" stroke-width="1"/>
+    <!-- Investing long -->
+    <g transform="translate(24,20)">
+      <line x1="0" y1="14" x2="420" y2="14" stroke="#E4E1D9" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="0" cy="14" r="5" fill="#E4E1D9"/>
+      <circle cx="420" cy="14" r="5" fill="#E4E1D9"/>
+      <text x="210" y="0" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#4B4F5A" text-anchor="middle">INVESTING — YEARS</text>
+      <text x="210" y="36" font-family="Source Sans 3, Inter, system-ui, sans-serif" font-size="11" fill="#4B4F5A" text-anchor="middle">holding ownership, betting on business</text>
+    </g>
+    <!-- Trading short dashed -->
+    <g transform="translate(24,48)">
+      <line x1="0" y1="0" x2="96" y2="0" stroke="#9C6B2E" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+      <circle cx="0" cy="0" r="5" fill="#9C6B2E"/>
+      <circle cx="96" cy="0" r="5" fill="#FFFFFF" stroke="#9C6B2E" stroke-width="2"/>
+      <text x="48" y="-10" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#6E4A1E">TRADING — DAYS / HOURS</text>
+    </g>
+    <text x="656" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#4B4F5A" text-anchor="end">Different skills. Confusing them is expensive. →</text>
+  </g>
+</svg>

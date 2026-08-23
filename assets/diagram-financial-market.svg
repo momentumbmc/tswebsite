@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="auto">
+  <defs>
+    <linearGradient id="surface-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#F5F4EF" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#12151C" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Eyebrow -->
+  <text x="600" y="62" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" letter-spacing="3" fill="#9C6B2E" text-anchor="middle">A FINANCIAL MARKET, SIMPLY</text>
+
+  <!-- Left panel: need money -->
+  <g filter="url(#soft-shadow)">
+    <rect x="110" y="150" width="380" height="220" rx="16" fill="url(#surface-grad)" stroke="#E4E1D9" stroke-width="1.5" />
+  </g>
+  <text x="290" y="192" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">NEED MONEY</text>
+  <text x="290" y="234" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="25" font-weight="700" fill="#12151C" text-anchor="middle">Companies &amp; governments</text>
+  <line x1="145" y1="252" x2="455" y2="252" stroke="#E4E1D9" stroke-width="1.5" />
+  <text x="290" y="292" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#4B4F5A" text-anchor="middle">to grow, build, and operate</text>
+
+  <!-- Right panel: spare money -->
+  <g filter="url(#soft-shadow)">
+    <rect x="710" y="150" width="380" height="220" rx="16" fill="url(#surface-grad)" stroke="#E4E1D9" stroke-width="1.5" />
+  </g>
+  <text x="900" y="192" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">SPARE MONEY</text>
+  <text x="900" y="234" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="25" font-weight="700" fill="#12151C" text-anchor="middle">People &amp; institutions</text>
+  <line x1="745" y1="252" x2="1055" y2="252" stroke="#E4E1D9" stroke-width="1.5" />
+  <text x="900" y="292" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#4B4F5A" text-anchor="middle">put it to use, not let it sit</text>
+
+  <!-- Connecting price axis through the gap -->
+  <line x1="455" y1="252" x2="745" y2="252" stroke="#9C6B2E" stroke-width="2" />
+  <line x1="600" y1="130" x2="600" y2="390" stroke="#E4E1D9" stroke-width="2" />
+
+  <!-- Meeting point -->
+  <circle cx="600" cy="252" r="28" fill="#F3E9DB" />
+  <circle cx="600" cy="252" r="9" fill="#9C6B2E" />
+
+  <!-- Meeting caption -->
+  <text x="600" y="410" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#12151C" text-anchor="middle">A price gets agreed on</text>
+  <text x="600" y="444" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#4B4F5A" text-anchor="middle">where the two needs meet</text>
+</svg>

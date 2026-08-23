@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="auto">
+  <defs>
+    <linearGradient id="surface-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#F5F4EF" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#12151C" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Eyebrow -->
+  <text x="600" y="62" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" letter-spacing="3" fill="#9C6B2E" text-anchor="middle">BEFORE YOUR FIRST TRADE</text>
+
+  <!-- The market node -->
+  <g filter="url(#soft-shadow)">
+    <rect x="60" y="255" width="250" height="90" rx="16" fill="url(#surface-grad)" stroke="#E4E1D9" stroke-width="1.5" />
+  </g>
+  <text x="185" y="308" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#12151C" text-anchor="middle">The market</text>
+
+  <!-- Your decision node -->
+  <g filter="url(#soft-shadow)">
+    <rect x="890" y="255" width="250" height="90" rx="16" fill="url(#surface-grad)" stroke="#E4E1D9" stroke-width="1.5" />
+  </g>
+  <text x="1015" y="308" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#12151C" text-anchor="middle">Your decision</text>
+
+  <!-- Understand it first: solid accent path -->
+  <path d="M 310 285 Q 600 210 890 285" stroke="#9C6B2E" stroke-width="5" fill="none" stroke-linecap="round" />
+  <polygon points="890,285 862,262 862,308" fill="#9C6B2E" />
+  <rect x="435" y="140" width="330" height="45" rx="22" fill="#F3E9DB" />
+  <text x="600" y="168" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#12151C" text-anchor="middle">Understand it first</text>
+
+  <!-- Or guess: dashed faint path -->
+  <path d="M 310 330 Q 600 395 890 330" stroke="#8A8D96" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="10 9" />
+  <polygon points="890,330 862,307 862,353" fill="#8A8D96" />
+  <text x="600" y="480" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="19" font-weight="400" fill="#4B4F5A" text-anchor="middle">Or guess</text>
+
+  <!-- Note under the guess path -->
+  <text x="600" y="520" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="400" fill="#8A8D96" text-anchor="middle">where most individual traders lose money</text>
+</svg>

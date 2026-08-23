@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024">
+  <defs>
+    <linearGradient id="circle-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#F5F4EF" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="24" flood-color="#12151C" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Canvas background -->
+  <rect x="0" y="0" width="1440" height="1024" fill="#FAFAF8" />
+
+  <!-- ================= PAGE HEADER ================= -->
+  <g transform="translate(720, 0)">
+    <text x="0" y="95" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" letter-spacing="4" fill="#9C6B2E" text-anchor="middle">MARKET EDUCATION</text>
+    <text x="0" y="155" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="54" font-weight="700" fill="#12151C" text-anchor="middle" letter-spacing="-0.5">New to the market?</text>
+    <text x="0" y="200" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#4B4F5A" text-anchor="middle">Plain-language foundations, before the framework</text>
+  </g>
+
+  <!-- ================= TWO-CIRCLE EXCHANGE ================= -->
+  <!-- Buyer's price circle -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="470" cy="560" r="270" fill="url(#circle-grad)" stroke="#E4E1D9" stroke-width="2" />
+  </g>
+  <!-- Seller's price circle -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="970" cy="560" r="270" fill="url(#circle-grad)" stroke="#E4E1D9" stroke-width="2" />
+  </g>
+
+  <!-- Overlap zone highlight -->
+  <rect x="690" y="300" width="60" height="520" rx="10" fill="#F3E9DB" opacity="0.55" />
+
+  <!-- Vertical price line with ticks -->
+  <line x1="720" y1="270" x2="720" y2="850" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="710" y1="390" x2="730" y2="390" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="710" y1="560" x2="730" y2="560" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="710" y1="730" x2="730" y2="730" stroke="#E4E1D9" stroke-width="2" />
+
+  <!-- Horizontal price level where they meet -->
+  <line x1="200" y1="560" x2="1240" y2="560" stroke="#9C6B2E" stroke-width="1.5" opacity="0.75" />
+
+  <!-- Meeting point -->
+  <circle cx="720" cy="560" r="34" fill="#F3E9DB" />
+  <circle cx="720" cy="560" r="13" fill="#9C6B2E" />
+
+  <!-- Labels -->
+  <text x="470" y="892" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">BUYER'S PRICE</text>
+  <text x="470" y="926" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#4B4F5A" text-anchor="middle">willing to pay</text>
+
+  <text x="970" y="892" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">SELLER'S PRICE</text>
+  <text x="970" y="926" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#4B4F5A" text-anchor="middle">willing to accept</text>
+
+  <text x="720" y="926" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#12151C" text-anchor="middle">A trade happens when the two agree</text>
+
+  <!-- Footer note -->
+  <text x="720" y="985" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="19" font-weight="400" fill="#8A8D96" text-anchor="middle">Price is a live negotiation, running continuously</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%" fill="none">
+  <!-- Outcome matrix ladder: 3 columns -->
+  <style>
+    .bar-bg { fill: #FAFAF8; rx: 4; }
+    .bar-low { fill: #E4E1D9; rx: 4; }
+    .bar-mid { fill: #8A8D96; rx: 4; }
+    .bar-high { fill: #9C6B2E; rx: 4; }
+    .text-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #12151C; text-anchor: middle; }
+    .text-metric { font-family: 'Inter', sans-serif; font-size: 14px; fill: #4B4F5A; text-anchor: middle; }
+    .line-divider { stroke: #E4E1D9; stroke-width: 1; }
+  </style>
+
+  <!-- Beginner Column -->
+  <g transform="translate(50, 0)">
+    <rect class="bar-bg" x="0" y="50" width="200" height="300" />
+    <rect class="bar-low" x="0" y="250" width="200" height="100" />
+    <text class="text-title" x="100" y="30">Beginner</text>
+    <text class="text-metric" x="100" y="280">Depends on indicators</text>
+    <text class="text-metric" x="100" y="310">Low context</text>
+  </g>
+
+  <!-- Strategy-dependent Column -->
+  <g transform="translate(300, 0)">
+    <rect class="bar-bg" x="0" y="50" width="200" height="300" />
+    <rect class="bar-mid" x="0" y="150" width="200" height="200" />
+    <text class="text-title" x="100" y="30">Strategy-dependent trader</text>
+    <text class="text-metric" x="100" y="190" fill="#FFFFFF">Medium context</text>
+    <text class="text-metric" x="100" y="220" fill="#FFFFFF">Indicator dependent</text>
+  </g>
+
+  <!-- Professionally Trained Column -->
+  <g transform="translate(550, 0)">
+    <rect class="bar-bg" x="0" y="50" width="200" height="300" />
+    <rect class="bar-high" x="0" y="50" width="200" height="300" />
+    <text class="text-title" x="100" y="30">Professionally trained</text>
+    <text class="text-metric" x="100" y="90" fill="#FFFFFF">High context</text>
+    <text class="text-metric" x="100" y="120" fill="#FFFFFF">Real hypotheses</text>
+    <text class="text-metric" x="100" y="150" fill="#FFFFFF">Independent research</text>
+  </g>
+
+  <line class="line-divider" x1="275" y1="50" x2="275" y2="350" />
+  <line class="line-divider" x1="525" y1="50" x2="525" y2="350" />
+</svg>

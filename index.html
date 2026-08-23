@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeSchool | The way institutions read markets</title>
+  <meta name="description"
+    content="Institutional market education for retail traders: learn to read auction behavior and order flow through one-on-one mentorship at TradeSchool.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239C6B2E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FAFAF8' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="assets/logo-header.svg" alt="TradeSchool" class="logo-header-img"></a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="why-were-different.html">Why we're different</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="who-its-for.html">Who this is for</a>
+        <a href="market-education.html">Market Education</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H21M3 6H21M3 18H21" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <nav id="mobile-nav-overlay" class="mobile-nav-overlay" aria-label="Mobile menu">
+    <button id="mobile-close-btn" class="close-btn" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6L18 18" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <a href="index.html" class="active">Home</a>
+    <a href="why-were-different.html">Why we're different</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="who-its-for.html">Who this is for</a>
+    <a href="market-education.html">Market Education</a>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section section-hero container hero">
+      <div class="hero-bg-overlay">
+        <img src="assets/bg-auction-curve.svg" alt="" class="hero-bg-img">
+      </div>
+      <h1 class="text-4xl mb-6">The way institutions read markets, now taught directly to retail
+        traders</h1>
+      <p class="text-lg text-ink-muted mb-8">For decades, that knowledge stayed inside trading desks and proprietary
+        firms. Retail traders got indicators, candlestick patterns, and signals instead. The Art of Making Wealth closes
+        that gap directly, one student at a time, through TradeSchool.</p>
+
+      <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary mb-12">Book a
+        one-on-one session</a>
+
+      <figure class="hero-img">
+        <img src="assets/hero-home.webp" alt="Real, annotated order-flow chart" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div id="sticky-cta-bar" class="sticky-cta-bar">
+      <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a
+        one-on-one session</a>
+    </div>
+
+    <!-- If this sounds familiar -->
+    <section class="section section--md container">
+      <div class="section-icon mb-4" aria-hidden="true">
+        <img src="assets/icon-lens.svg" alt="" class="section-icon-img" width="20" height="20" loading="lazy" decoding="async">
+      </div>
+      <span class="eyebrow">PATTERN</span><div class="section-rule"></div><h2 class="text-3xl mb-6">If this sounds familiar</h2>
+      <p class="text-lg text-ink mb-6">You've taken a trade that looked exactly like the one that worked last week, and
+        watched it fail anyway. You've added another indicator hoping it would finally remove the guesswork. You've sat
+        through hours of recorded classes and could recite three or four named strategies, and you still couldn't
+        explain, out loud, in real time, why a candle just did what it did.</p>
+      <p class="text-base text-ink-muted">None of that means you're bad at this. It means you were taught to follow
+        signals instead of understand a market, and the gap between those two only becomes visible once it has already
+        cost you money.</p>
+      <p class="text-base text-ink-muted mt-4">You're not the only one it's cost.</p>
+    </section>
+
+    <!-- The numbers behind that feeling (Stat Callout Block) -->
+    <section class="stat-block full-bleed-section">
+      <div class="full-bleed-content">
+        <h2 class="text-3xl mb-8">The numbers behind that feeling</h2>
+
+        <div class="stat-wrap">
+          <p class="text-lg mb-8 stat-lead">SEBI's own research: roughly 91% of individual traders in equity derivatives
+            lost money in FY2024-25, around ₹1.056 lakh crore in aggregate net losses for the year. The prior study,
+            covering FY2022 through FY2024, found 93% of individual F&O traders lost money, over ₹1.8 lakh crore in
+            total. A separate study on intraday cash trading found 7 out of 10 individual traders lost money there too.
+          </p>
+
+          <p class="text-lg mb-16 stat-lead">That's not a scare number meant to sell you something. It's the regulator's
+            own data, and it says what your own experience may already have told you: knowing how to place a trade isn't
+            the same thing as understanding a market.</p>
+        </div>
+
+        <div class="grid mb-12">
+          <div class="lg-col-span-4 flex flex-col mb-8 stat-item">
+            <span class="stat-figure">91<span class="percent">%</span></span>
+            <span class="text-base stat-label">lost money in equity derivatives FY24-25</span>
+          </div>
+          <div class="lg-col-span-4 flex flex-col mb-8 stat-item">
+            <span class="stat-figure">93<span class="percent">%</span></span>
+            <span class="text-base stat-label">lost money in F&O FY22-24</span>
+          </div>
+          <div class="lg-col-span-4 flex flex-col mb-8 stat-item">
+            <span class="stat-figure">7<span class="text-accent">/</span>10</span>
+            <span class="text-base stat-label">lost money in intraday cash trading</span>
+          </div>
+        </div>
+
+        <p class="text-xs mt-8 stat-sources">Sources: SEBI studies published July 2024, September 2024, and July 2025.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why this keeps happening / What we teach instead -->
+    <section class="section section--md container">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Why this keeps happening</h2>
+          <p class="text-base text-ink mb-6">Most stock market education in India, especially in Kerala, follows the
+            same shape: a batch of students, a recorded video, an indicator, a signal, a certificate. Nobody in that
+            room learns to read a market. They learn to follow one person's rules until the market changes character and
+            the rules stop working, and then nobody in the room knows why.</p>
+          <p class="text-base text-ink mb-8">We think that's close to indefensible for what people pay to learn it, and
+            we built something else on purpose. More on exactly how, on the <a href="why-were-different.html">Why we're
+              different</a> page.</p>
+
+          <h2 class="text-3xl mb-6">What we teach instead</h2>
+          <p class="text-base text-ink mb-8">Institutions don't trade off indicators. They read auction behavior: who's
+            participating, where value is being accepted, where liquidity sits, who's trapped, what the order flow shows
+            underneath the candle. That's the Market Intelligence Framework, an eleven-level curriculum that takes a
+            student from how a market physically works to independent professional research, and it's the actual core of
+            what The Art of Making Wealth teaches. Full breakdown on the <a href="curriculum.html">The curriculum</a>
+            page.</p>
+        </div>
+
+        <!-- lg-col-start-8 intentionally omitted: it was an undefined no-op class and auto-placement already renders this column at cols 7-12. -->
+        <div class="lg-col-span-6">
+<figure class="bg-canvas rounded-lg flex items-center justify-center grid-media diagram-figure">
+              <img src="assets/diagram-eleven-levels.webp" alt="Eleven-level progression graphic" loading="lazy"
+                decoding="async">
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- One market, or every market? -->
+    <section class="section section--sm container">
+      <h2 class="text-3xl mb-6">One market, or every market?</h2>
+      <p class="text-base text-ink mb-8">If you've been searching for an intraday course, a swing trading course, an
+        options course, or a scalping course, you've probably wondered where this fits. It doesn't fit into any one of
+        those categories, and that's deliberate. The framework above teaches how an auction moves, and an auction is an
+        auction whether it's happening on an intraday chart, a weekly swing position, an options chain, a currency pair,
+        or a crypto exchange. Learn to read one properly and the reading transfers. See exactly why, on the <a
+          href="curriculum.html">The curriculum</a> page.</p>
+    </section>
+
+    <!-- What we refuse to promise you -->
+    <section class="section section--sm container">
+      <div class="section-icon mb-4" aria-hidden="true">
+        <img src="assets/icon-scale.svg" alt="" class="section-icon-img" width="20" height="20" loading="lazy" decoding="async">
+      </div>
+      <span class="eyebrow">PROMISE</span><div class="section-rule"></div><h2 class="text-3xl mb-6">What we refuse to promise you</h2>
+      <p class="text-base text-ink mb-6">No guaranteed returns. No fixed win rate. No secret indicator. No magic setup.
+        No promise that any strategy works in every market condition. Anyone who has genuinely traded knows why: markets
+        don't owe anyone certainty, and a course that implies otherwise is selling a story, not an education.</p>
+      <p class="text-base text-ink">What we teach instead is harder to put on a banner and worth far more: the ability
+        to reason clearly when certainty isn't available.</p>
+    </section>
+
+    <!-- Beginner or expert, both belong here / Not only stock market training -->
+    <section class="section section--md container">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Beginner or expert, both belong here</h2>
+          <p class="text-base text-ink mb-8">The syllabus starts wherever you are, not where a fixed curriculum assumes
+            you should be. Complete beginners and experienced traders enroll in the same program. Full answer on the <a
+              href="who-its-for.html">Who it's for</a> page. Starting from genuinely nothing? The <a
+              href="market-education.html">Market Education</a> page covers the basics first, in plain language.</p>
+
+          <h2 class="text-3xl mb-6">Not only stock market training</h2>
+          <p class="text-base text-ink mb-8">The Art of Making Wealth is the flagship, not the only program. TradeSchool
+            also runs personal finance, financial wellness, and financial literacy programs for individuals, corporate
+            teams, and students. See the full range on the <a href="who-its-for.html">Who it's for</a> page.</p>
+        </div>
+        <div class="lg-col-span-6">
+<figure class="bg-canvas rounded-lg flex items-center justify-center grid-media diagram-figure">
+              <img src="assets/programs-overview.webp" alt="TradeSchool programs overview" loading="lazy"
+                decoding="async">
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who this is for / Start the mentorship -->
+    <section class="section section--md container bg-canvas">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Who this is for</h2>
+          <p class="text-base text-ink mb-4">Built for people who want real market education instead of another shortcut
+            strategy, who are tired of jumping from indicator to indicator, and who are willing to study rather than
+            just consume content.</p>
+          <p class="text-base text-ink mb-8">Not built for people who want guaranteed returns, instant calls, or an
+            education that promises to remove uncertainty rather than teach them to work inside it.</p>
+
+          <p class="text-base text-ink">Every student gets one dedicated mentor for the length of their training, live
+            sessions only, no fixed end date. That's also why seats stay limited. When a mentor's time goes to their
+            existing students, there isn't extra left over to sell to new ones. Full model on the <a
+              href="why-were-different.html">Why we're different</a> page.</p>
+        </div>
+
+        <!-- lg-col-start-8 / lg-mt-0 intentionally omitted: both were undefined no-op classes; mt-12 applies at all widths exactly as before. -->
+        <div class="lg-col-span-6 mt-12">
+          <h2 class="text-3xl mb-6">Start the mentorship</h2>
+          <p class="text-base text-ink mb-8">TradeSchool doesn't run on batches or intake deadlines, and it isn't trying
+            to be the biggest name in this industry. Mentorship begins when you're ready to commit to it.</p>
+
+          <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary mb-6">Book a
+            one-on-one session</a>
+          <blockquote class="text-base text-ink pull-quote">Understand the market. Build your own intelligence. Trade
+            with reason.</blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-anchor site-footer">
+    <div class="container flex flex-col items-center">
+      <a href="index.html" class="footer-logo mb-8">
+        <img src="assets/logo.png" alt="TradeSchool Logo" class="footer-logo-img">
+      </a>
+      <nav class="flex items-center justify-center gap-8 mb-12 footer-nav">
+        <a href="https://www.ft.com/news-feed" target="_blank" rel="noopener noreferrer"
+          class="text-anchor no-underline text-sm font-mono footer-link">News</a>
+        <a href="index.html" class="text-anchor no-underline text-sm font-mono footer-link">Home</a>
+        <a href="why-were-different.html" class="text-anchor no-underline text-sm font-mono footer-link">Why we're
+          different</a>
+        <a href="curriculum.html" class="text-anchor no-underline text-sm font-mono footer-link">Curriculum</a>
+        <a href="who-its-for.html" class="text-anchor no-underline text-sm font-mono footer-link">Who this is for</a>
+        <a href="market-education.html" class="text-anchor no-underline text-sm font-mono footer-link">Market
+          Education</a>
+      </nav>
+      <p class="text-xs font-mono footer-copyright">&copy; 2026 TradeSchool. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Education | TradeSchool</title>
+  <meta name="description" content="New to markets? Start here: what a financial market really is, how the stock market works, and the one idea TradeSchool's curriculum is built on.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239C6B2E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FAFAF8' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="assets/logo-header.svg" alt="TradeSchool" class="logo-header-img"></a>
+      
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="why-were-different.html">Why we're different</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="who-its-for.html">Who this is for</a>
+        <a href="market-education.html" class="active">Market Education</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H21M3 6H21M3 18H21" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <nav id="mobile-nav-overlay" class="mobile-nav-overlay" aria-label="Mobile menu">
+    <button id="mobile-close-btn" class="close-btn" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6L18 18" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="why-were-different.html">Why we're different</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="who-its-for.html">Who this is for</a>
+    <a href="market-education.html" class="active">Market Education</a>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="section section-hero container hero">
+
+      <h1 class="text-4xl mb-6">New to the market? Start here.</h1>
+      <p class="text-lg text-ink mb-8">If terms like auction, order flow, or institutional inventory already make sense to you, this page isn't necessary, the rest of the site is written for you. If they don't, welcome. This is where to begin.</p>
+      
+      <figure class="hero-img">
+        <img src="assets/hero-market-essentials.svg" alt="Buyer's price meeting seller's price" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div id="sticky-cta-bar" class="sticky-cta-bar">
+      <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a one-on-one session</a>
+    </div>
+
+    <!-- What is a financial market, really? -->
+    <section class="section section--md container me-prose">
+      <!-- lg-col-start-8 intentionally omitted throughout this page: it was an undefined
+         no-op class and auto-placement already renders each second column at cols 7-12. -->
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <span class="eyebrow">PRIMER</span><div class="section-rule"></div><h2 class="text-3xl mb-6">What is a financial market, really?</h2>
+          <p class="text-base text-ink mb-8">A market, in the everyday sense, is a place where people buy and sell things. A vegetable market trades vegetables. A financial market trades financial things instead: ownership in companies, loans, currencies, and a few other instruments. It exists for a simple reason. Companies and governments need money to grow, build, and operate. People and institutions with spare money want a way to put it to use instead of letting it sit still. A financial market is where those two needs meet, and a price gets agreed on.</p>
+        </div>
+        <div class="lg-col-span-6">
+          <figure class="diagram-frame grid-media">
+            <img src="assets/diagram-financial-market.svg" alt="Diagram: companies and governments that need money meeting people and institutions with spare money, where a price gets agreed on" loading="lazy" decoding="async" class="diagram-img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is the stock market, specifically? -->
+    <section class="section section--md container me-prose">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <figure class="diagram-frame grid-media">
+            <img src="assets/diagram-two-circle-exchange.svg" alt="Two-circle exchange diagram: buyer's price meeting seller's price" loading="lazy" decoding="async" class="diagram-img">
+          </figure>
+        </div>
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">What is the stock market, specifically?</h2>
+          <p class="text-base text-ink mb-6">A stock, also called a share, is a small ownership slice of a company. If a company has one crore shares outstanding and you own one share, you own one ten-millionth of that company. Companies sell shares to raise money, first when they go public, and after that, those existing shares trade between investors on an exchange like the NSE or BSE.</p>
+          <p class="text-base text-ink mb-8">Nobody sets the price by decree. It moves because, at any given moment, buyers and sellers disagree slightly on what a fair price is, and every trade is really two people finally agreeing. Multiply that by millions of trades a day and you get a moving price. That constant back-and-forth negotiation is, underneath everything, a live auction, running continuously. That single idea, that price comes from an ongoing auction rather than a fixed number, is the entire foundation TradeSchool's curriculum is built on. More on that when you're ready to go deeper.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investing or trading, in one line -->
+    <section class="section section--md container me-prose">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Investing or trading, in one line</h2>
+          <p class="text-base text-ink mb-8">Investing means holding ownership for years, betting on a business doing well over time. Trading means buying and selling over much shorter windows, days, hours, sometimes minutes, based on how price is moving right now rather than the long-term health of the business. Neither is more legitimate than the other. They're different skills, and confusing the two is one of the most common ways people lose money without realizing which game they were playing.</p>
+        </div>
+        <div class="lg-col-span-6">
+          <figure class="diagram-frame grid-media">
+            <img src="assets/diagram-investing-trading.svg" alt="Diagram: a long arrow for investing, holding for years, and a short arrow for trading over days, hours, and minutes" loading="lazy" decoding="async" class="diagram-img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why understanding this matters -->
+    <section class="section section--md container me-prose">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <figure class="diagram-frame grid-media">
+            <img src="assets/diagram-understanding-first.svg" alt="Diagram: two paths from the market to a decision, understanding it first versus guessing" loading="lazy" decoding="async" class="diagram-img">
+          </figure>
+        </div>
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Why understanding this matters</h2>
+          <p class="text-base text-ink mb-8">You could skip all of this and place a trade tomorrow. Most people do exactly that. It's a large part of why SEBI's own research found that most individual traders in India lose money rather than make it. Understanding the market doesn't guarantee a profit, nothing does, but trading without understanding it is closer to guessing than investing, and the data reflects that difference clearly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where this leads -->
+    <section class="section section--md container me-prose">
+      <div class="grid">
+        <div class="lg-col-span-6">
+          <h2 class="text-3xl mb-6">Where this leads</h2>
+          <p class="text-base text-ink mb-8">Everything above is genuinely enough to start following the market sensibly. If you want to go further, and eventually trade or invest with real skill instead of guesswork, that's exactly where The Art of Making Wealth picks up. Level 1 of the curriculum assumes exactly the knowledge on this page and nothing more, so there's no gap to jump.</p>
+          
+          <div class="flex flex-wrap items-center gap-4 mt-8">
+            <a href="curriculum.html" class="no-underline font-mono-bold">See the full curriculum &rarr;</a>
+            <span class="text-ink-faint">|</span>
+            <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="no-underline font-mono-bold">Book a one-on-one session</a>
+          </div>
+        </div>
+        <div class="lg-col-span-6">
+          <figure class="diagram-frame grid-media">
+            <img src="assets/diagram-where-this-leads.svg" alt="Diagram: a path from the basics on this page rising to Level 1 of the curriculum" loading="lazy" decoding="async" class="diagram-img">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-anchor site-footer">
+    <div class="container flex flex-col items-center">
+      <a href="index.html" class="footer-logo mb-8">
+        <img src="assets/logo.png" alt="TradeSchool Logo" class="footer-logo-img">
+      </a>
+      <nav class="flex items-center justify-center gap-8 mb-12 footer-nav">
+        <a href="https://www.ft.com/news-feed" target="_blank" rel="noopener noreferrer" class="text-anchor no-underline text-sm font-mono footer-link">News</a>
+        <a href="index.html" class="text-anchor no-underline text-sm font-mono footer-link">Home</a>
+        <a href="why-were-different.html" class="text-anchor no-underline text-sm font-mono footer-link">Why we're different</a>
+        <a href="curriculum.html" class="text-anchor no-underline text-sm font-mono footer-link">Curriculum</a>
+        <a href="who-its-for.html" class="text-anchor no-underline text-sm font-mono footer-link">Who this is for</a>
+        <a href="market-education.html" class="text-anchor no-underline text-sm font-mono footer-link">Market Education</a>
+      </nav>
+      <p class="text-xs font-mono footer-copyright">&copy; 2026 TradeSchool. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

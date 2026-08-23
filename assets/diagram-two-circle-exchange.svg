@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="auto">
+  <defs>
+    <linearGradient id="circle-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#F5F4EF" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#12151C" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Eyebrow -->
+  <text x="600" y="62" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" letter-spacing="3" fill="#9C6B2E" text-anchor="middle">HOW A PRICE IS SET</text>
+
+  <!-- Buyer's price circle -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="340" cy="310" r="200" fill="url(#circle-grad)" stroke="#E4E1D9" stroke-width="2" />
+  </g>
+  <!-- Seller's price circle -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="860" cy="310" r="200" fill="url(#circle-grad)" stroke="#E4E1D9" stroke-width="2" />
+  </g>
+
+  <!-- Overlap zone highlight -->
+  <rect x="555" y="120" width="90" height="380" rx="10" fill="#F3E9DB" opacity="0.55" />
+
+  <!-- Vertical price line with ticks -->
+  <line x1="600" y1="95" x2="600" y2="525" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="592" y1="180" x2="608" y2="180" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="592" y1="310" x2="608" y2="310" stroke="#E4E1D9" stroke-width="2" />
+  <line x1="592" y1="440" x2="608" y2="440" stroke="#E4E1D9" stroke-width="2" />
+
+  <!-- Horizontal price level where they meet -->
+  <line x1="140" y1="310" x2="1060" y2="310" stroke="#9C6B2E" stroke-width="1.5" opacity="0.75" />
+
+  <!-- Meeting point -->
+  <circle cx="600" cy="310" r="26" fill="#F3E9DB" />
+  <circle cx="600" cy="310" r="10" fill="#9C6B2E" />
+
+  <!-- Labels -->
+  <text x="340" y="545" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">BUYER'S PRICE</text>
+  <text x="340" y="585" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#4B4F5A" text-anchor="middle">willing to pay</text>
+
+  <text x="860" y="545" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" letter-spacing="2.5" fill="#8A8D96" text-anchor="middle">SELLER'S PRICE</text>
+  <text x="860" y="585" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#4B4F5A" text-anchor="middle">willing to accept</text>
+
+  <text x="600" y="585" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="19" font-weight="600" fill="#12151C" text-anchor="middle">A trade happens when the two agree</text>
+</svg>
