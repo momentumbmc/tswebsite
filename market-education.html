@@ -50,15 +50,36 @@
   </nav>
 
   <main>
-    <!-- Hero -->
-    <section id="hero" class="section section-hero container hero">
-
-      <h1 class="text-4xl mb-6">New to the market? Start here.</h1>
-      <p class="text-lg text-ink mb-8">If terms like auction, order flow, or institutional inventory already make sense to you, this page isn't necessary, the rest of the site is written for you. If they don't, welcome. This is where to begin.</p>
-      
-      <figure class="hero-img">
-        <img src="assets/hero-market-essentials.svg" alt="Buyer's price meeting seller's price" fetchpriority="high">
-      </figure>
+    <!-- Hero — Shared reusable clone (isolated per page) -->
+    <section id="hero" class="hero-shared full-bleed-section hero-shared--education">
+      <div class="hero-shared__inner full-bleed-content">
+        <div class="hero-shared__grid">
+          <div class="hero-shared__content">
+            <span class="hero-shared__eyebrow eyebrow">STOCK MARKET EDUCATION, REDEFINED</span>
+            <div class="section-rule hero-shared__rule"></div>
+            <h1 class="hero-shared__title">
+              <span class="hero-shared__title--white">We don’t teach</span><br>
+              <span class="hero-shared__title--white">strategies.</span><br>
+              <span class="hero-shared__title--accent">We build market</span><br>
+              <span class="hero-shared__title--accent">readers.</span>
+            </h1>
+            <p class="hero-shared__desc">Most institutes sell you rules.<br>We teach you how the market really works.</p>
+            <a href="https://wa.me/919481369078" target="_blank" rel="noopener noreferrer" class="btn-primary hero-shared__cta">SEE WHAT MAKES US DIFFERENT <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero-features-bar full-bleed-section" aria-label="Key differentiators">
+      <div class="hero-features-bar__inner full-bleed-content">
+        <div class="hero-shared__features" role="list">
+          <div class="hero-shared__feat" role="listitem"><span class="hero-shared__feat-kicker">REAL MARKET FOCUS</span><span class="hero-shared__feat-value">No Strategies.<br>Only Understanding.</span></div>
+          <div class="hero-shared__feat" role="listitem"><span class="hero-shared__feat-kicker">PRACTICAL &amp; RELEVANT</span><span class="hero-shared__feat-value">Real-Time Learning.<br>Real Market Context.</span></div>
+          <div class="hero-shared__feat" role="listitem"><span class="hero-shared__feat-kicker">BUILT ON EXPERIENCE</span><span class="hero-shared__feat-value">Years in the Market.<br>Thousands of Hours.</span></div>
+          <div class="hero-shared__feat" role="listitem"><span class="hero-shared__feat-kicker">TRANSPARENT &amp; HONEST</span><span class="hero-shared__feat-value">No Hype.<br>Just the Truth.</span></div>
+          <div class="hero-shared__feat" role="listitem"><span class="hero-shared__feat-kicker">FOCUSED ON YOU</span><span class="hero-shared__feat-value">Small Batches.<br>Personal Attention.</span></div>
+        </div>
+      </div>
+    </section>
     </section>
 
     <!-- Sticky Mobile CTA Bar -->
