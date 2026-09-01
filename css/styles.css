@@ -1599,8 +1599,9 @@ img {
 }
 
 .hero-shared__features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-4);
   border-top: none;
   margin-top: 0;
@@ -1609,10 +1610,10 @@ img {
 
 @media (min-width: 640px) {
   .hero-shared__features {
-    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     margin-top: 0;
     padding-top: 0;
+    justify-content: center;
   }
 }
 
@@ -1621,6 +1622,16 @@ img {
   flex-direction: column;
   gap: 6px;
   padding-top: var(--space-2);
+  flex: 1 1 180px;
+  max-width: 260px;
+  min-width: 160px;
+}
+
+@media (max-width: 639px) {
+  .hero-shared__feat {
+    flex: 1 1 calc(50% - var(--space-4));
+    max-width: calc(50% - var(--space-4) / 2);
+  }
 }
 
 @media (min-width: 640px) {
