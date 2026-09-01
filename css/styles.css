@@ -14,6 +14,8 @@
   /* One disciplined accent */
   --color-accent-deep: #6E4A1E;
   --color-accent-wash: #F3E9DB;
+  /* One new accent */
+  --color-accent-new: #D09F62;
 
   /* Typography — 3-fonts: Newsreader (header) + Source Sans 3 (body + Inter fallback) + JetBrains Mono */
   --font-display: 'Newsreader', serif;
@@ -1278,7 +1280,7 @@ img {
 .hero-video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.10);
   opacity: 1;
 }
 
@@ -1296,7 +1298,7 @@ img {
 
 @media (max-width: 640px) {
   .hero-video-overlay {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.10);
     opacity: 1;
   }
 
@@ -1517,7 +1519,13 @@ img {
 }
 
 .hero-shared__eyebrow.eyebrow {
-  color: var(--color-accent);
+  color: var(--color-accent-new);
+}
+
+@media (max-width: 639px) {
+  .hero-shared__eyebrow.eyebrow {
+    font-size: 0.625rem;
+  }
 }
 
 .hero-shared__rule {
