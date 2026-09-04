@@ -16,10 +16,15 @@
   --color-accent-wash: #F3E9DB;
   /* One new accent */
   --color-accent-new: #D09F62;
+  /* Eyebrow Color */
+  --color-eyebrow: #96CC28;
+  /* FT — pixel-perfect quote mark */
+  --o3-color-palette-oxford: #0F5499;
+  --o3-icon-quote-left: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='M259.728 440.648c115.854-20.986 235.92 48.267 235.92 184.676 0 104.93-92.683 184.676-189.579 184.676C190.215 810 87 736.549 87 577.056c0-186.725 160.005-346.183 393.719-363.043a.2.2 0 0 1 .213.168l6.259 39.494a.2.2 0 0 1-.169.23C339.7 277.024 259.728 350.449 259.728 440.648m442.351 0C817.933 419.662 938 488.915 938 625.324 938 730.254 845.317 810 748.421 810c-115.854 0-219.07-73.451-219.07-232.944 0-186.725 160.005-346.183 393.719-363.043a.203.203 0 0 1 .214.168l6.259 39.494a.203.203 0 0 1-.169.23c-147.323 23.119-227.295 96.544-227.295 186.743'/%3E%3C/svg%3E");
 
-  /* Typography — 3-fonts: Newsreader (header) + Source Sans 3 (body + Inter fallback) + JetBrains Mono */
+  /* Typography — Spline Sans primary, Source Sans 3 fallback + Inter fallback + JetBrains Mono */
   --font-display: 'Newsreader', serif;
-  --font-body: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+  --font-body: 'Spline Sans', 'Source Sans 3', 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing */
@@ -187,7 +192,7 @@ h2 em,
 .section-rule {
   width: 32px;
   height: 2px;
-  background-color: var(--color-accent);
+  background-color: var(--color-eyebrow);
   margin-bottom: var(--space-6);
 }
 
@@ -1724,6 +1729,178 @@ img {
   .hero-shared__feat-value {
     font-size: 0.875rem;
     line-height: 1.5;
+  }
+}
+
+/* Quote Card — reusable FT-inspired, Tier-1 corporate, 1.05:1 slightly rect */
+.quote-section {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.quote-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  justify-content: center;
+}
+
+.quote-card {
+  background: var(--color-accent-wash);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 24px;
+  width: 360px;
+  height: 342px;
+  flex: 0 0 360px;
+  transition: border-color 150ms ease-out;
+}
+
+.quote-card:hover {
+  border-color: var(--color-accent);
+}
+
+.o3-visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  border: 0;
+  clip-path: polygon(0 0, 0 0);
+  height: 2px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  width: 2px;
+}
+
+.quote-card__mark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+  margin: 0 auto 12px;
+}
+
+.quote-card__mark::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--o3-color-palette-oxford);
+  mask-image: var(--o3-icon-quote-left);
+  -webkit-mask-image: var(--o3-icon-quote-left);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .quote-card__mark,
+  .quote-card__mark::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .quote-card__mark {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 639px) {
+  .quote-card__mark,
+  .quote-card__mark::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .quote-card__mark {
+    margin-bottom: 8px;
+  }
+}
+
+.quote-card__header {
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--color-ink);
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.quote-card__body {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+  margin: 12px 0 auto;
+  overflow-wrap: break-word;
+}
+
+.quote-card__author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 16px;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .quote-card {
+    width: 300px;
+    height: 285px;
+    flex: 0 0 300px;
+    padding: 24px 20px;
+  }
+
+  .quote-card__header {
+    font-size: 1.15rem;
+  }
+
+  .quote-card__body {
+    font-size: 0.82rem;
+  }
+
+  .quote-card__author {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .quote-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-card {
+    width: 280px;
+    height: 266px;
+    flex: 0 0 280px;
+    padding: 20px 16px;
+  }
+
+  .quote-card__header {
+    font-size: 1.05rem;
+  }
+
+  .quote-card__body {
+    font-size: 0.78rem;
+  }
+
+  .quote-card__mark svg {
+    width: 18px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .quote-card {
+    width: 260px;
+    height: 248px;
+    flex: 0 0 260px;
   }
 }
 
